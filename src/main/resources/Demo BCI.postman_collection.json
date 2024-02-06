@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "44edc9b1-a93e-451a-88ec-8a0654f70f64",
+		"name": "Demo BCI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11868770",
+		"_collection_link": "https://galactic-crescent-87790.postman.co/workspace/DemoSprintBoot~03c8dfeb-a28f-45a7-8af0-aa7da6e2c0f7/collection/11868770-44edc9b1-a93e-451a-88ec-8a0654f70f64?action=share&source=collection_link&creator=11868770"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"miller ulloa gomez\",\r\n\"email\": \"yugo1@gmail.com\",\r\n\"password\": \"1234\",\r\n\"phones\": [\r\n        {\r\n        \"number\": \"1234567\",\r\n        \"citycode\": \"1\",\r\n        \"contrycode\": \"57\"\r\n        },\r\n        {\r\n        \"number\": \"12345678\",\r\n        \"citycode\": \"2\",\r\n        \"contrycode\": \"58\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/v1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
