@@ -55,6 +55,23 @@ http://localhost:8080/auth/v1/register
 }
 ```
 
+# Manual Uso Swagger
+
+```sh
+http://localhost:8080/doc/swagger-ui/index.html
+```
+> Note: `Cambiar Json de Ejemplo Swagger` Editar, Copia y pegar `Json Request` anterior mencionado. 
+
+## Pasos Swagger
+```sh
+1.- click en boton POST /user-controller/register
+2.- click en boton try it out
+3.- Borrar Json Ejemplo y Pegar Json Request del manual.
+4.- click en boton Execute
+5.- revisar las respuestas.
+```
+
+
 ## Autor
 
 **Miller Ulloa Gomez**
