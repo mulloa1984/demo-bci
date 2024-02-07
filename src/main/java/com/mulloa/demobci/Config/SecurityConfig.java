@@ -10,7 +10,6 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import com.mulloa.demobci.Jwt.JwtAuthenticationFilter;
-import com.mulloa.demobci.helper.Constantes;
 
 import lombok.RequiredArgsConstructor;
 
@@ -40,7 +39,5 @@ public class SecurityConfig {
             .authenticationProvider(authProvider)
             .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
             .build();
-            
-            
     }
 }
